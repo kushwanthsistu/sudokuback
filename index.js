@@ -5,7 +5,7 @@ const app = express() ;
 app.use(cors()) ;
 
 app.get('/', (req, res) => {
-    res.send("working") ;
+    res.send("server is working") ;
 })
 
 app.get('/testing', (req, res) => {
@@ -14,7 +14,7 @@ app.get('/testing', (req, res) => {
     res.json(data[p]) ;
 })
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000 ;
 
 app.listen(port, () => {
     console.log("listening on port 3000") ;
